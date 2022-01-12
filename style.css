@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&display=swap');
+body{
+  font-family: Montserrat;
+  margin: 0;
+}
+.bar {
+  position: sticky;
+  top: 0;
+  background: #5690DB;
+  padding: 1rem;
+}
+.bar > a{
+  padding: 1%;
+  color: white;
+  text-decoration-line: none;
+}
+.bar > a.active{
+  font-weight: 800;
+}
+.bar > a, .bar > hr.vertical{
+  display: inline;
+}
+hr.vertical {
+  border: 0;
+  margin: 0;
+  border-left: 2px solid rgb(61, 104, 160);
+  height: 1rem;
+}
+.back{
+  width: 100%;
+  height: 25rem;
+  margin-top: 0;
+  margin-bottom: 3%;
+  animation: smallBackground 2s ease 1s 1 normal forwards;
+  background-repeat: no-repeat;
+}
+.back.win11{
+  background: rgb(0, 123, 255) url("./images/img100.jpg");
+  background-size: 120%;
+  background-position: center center;
+}
+.back.win8{
+  background: rgb(255, 174, 0) url("./images/8.jpeg");
+  background-size: 120%;
+  background-position: center center;
+}
+.back.win7{
+  background: rgb(0, 123, 255) url("./images/7.jpg");
+  background-size: 120%;
+  background-position: center center;
+}
+.back > h1{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25rem;
+  color: white;
+  font-size: 3rem;
+  animation: largeText 2s ease 1s 1 normal forwards;
+  margin: 0;
+  padding: 0;
+}
+@keyframes largeText {
+  0% {
+    font-size: 3rem;
+  }
+
+  100% {
+    font-size: 4rem;
+  }
+}
+@keyframes smallBackground {
+  0%{
+    background-size: 120%;
+  }
+
+  100%{
+    background-size: 100%;
+  }
+}
+.content{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.header{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.update{
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+.update > img{
+  margin-right: 2%;
+}
+.update > .info{
+  width: 25%;
+}
+.update > .info > ul{
+  list-style-type: none;
+  padding: 0;
+}
+.email{
+  background: rgb(0, 110, 255);
+}
+.scratch{
+  background: rgb(255, 204, 0);
+}
+.discord{
+  background: rgb(84, 84, 255);
+}
+.contact{
+  display: inline;
+  border: black 0px solid;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px;
+}
+.contact > a{
+  color: white;
+  text-decoration-line: none;
+  text-align: center;
+}
+.contacts{
+  text-align: center;
+}
+.images > img{
+  width: 30%;
+  height: auto;
+}
+.images{
+  position: absolute;
+  clip: rect(0px,60px,200px,0px);
+}
