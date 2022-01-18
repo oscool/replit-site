@@ -1,6 +1,8 @@
 var bar = $(".bar");
 var path = window.location.href;
-console.log(path);
+if (path == "https://site.oscool.repl.co/"){
+  var path = "https://site.oscool.repl.co/index.html"
+}
 $.ajax({
   url: "https://site.oscool.repl.co/bar.html",
   type: "GET"
