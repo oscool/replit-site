@@ -3,6 +3,10 @@ body{
   margin: 0;
   text-align: center;
 }
+body.dark-theme{
+  background: #202020;
+  color: white;
+}
 .bar {
   position: sticky;
   top: 0;
@@ -11,9 +15,10 @@ body{
   font-weight: 500;
 }
 .bar > a{
-  padding: 1%;
+  padding: .5%;
   color: white;
   text-decoration-line: none;
+  font-size: auto;
 }
 .bar > a.active{
   font-weight: 800;
@@ -37,17 +42,17 @@ hr.vertical {
 }
 .back.win11{
   background: rgb(0, 123, 255) url("./images/img100.jpg");
-  background-size: 120rem;
+  background-size: 170rem;
   background-position: center center;
 }
 .back.win8{
   background: rgb(255, 174, 0) url("./images/8.jpeg");
-  background-size: 120rem;
+  background-size: 170rem;
   background-position: center center;
 }
 .back.win7{
   background: rgb(0, 123, 255) url("./images/7.jpg");
-  background-size: 120rem;
+  background-size: 170rem;
   background-position: center center;
 }
 .back > h1{
@@ -71,11 +76,11 @@ hr.vertical {
 }
 @keyframes smallBackground {
   0%{
-    background-size: 120rem;
+    background-size: 170rem;
   }
 
   100%{
-    background-size: 100rem;
+    background-size: 150rem;
   }
 }
 .content{
@@ -92,7 +97,7 @@ hr.vertical {
   font-weight: 730;
 }
 .update{
-  display: flex;
+  display: inline;
   justify-content: center;
   margin: 1%;
   flex-wrap: wrap;
@@ -106,6 +111,11 @@ hr.vertical {
 .update > .info > ul{
   list-style-type: none;
   padding: 0;
+}
+.updates{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .email{
   background: rgb(0, 110, 255);
@@ -130,6 +140,7 @@ hr.vertical {
 }
 .contacts{
   text-align: center;
+  font-weight: 900;
 }
 .profile{
   border: transparent 0px solid;
@@ -164,4 +175,16 @@ hr.vertical {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+button{
+  background: #5690DB;
+  border: transparent 0px solid;
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.8%;
+  cursor: pointer;
+}
+.ver{
+  margin: 1%;
 }
